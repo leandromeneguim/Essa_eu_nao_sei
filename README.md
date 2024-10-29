@@ -1,4 +1,4 @@
-# 🤖 Ajuda AI
+# 🤖 Essa eu não sei
 
 Uma aplicação web que utiliza a API do Google Gemini para analisar imagens de questões e exercícios, fornecendo links para vídeo-aulas relevantes e uma explicação detalhada do conteúdo teórico necessário.
 
@@ -22,13 +22,9 @@ Uma aplicação web que utiliza a API do Google Gemini para analisar imagens de 
 - Accordion.js (para interface expansível)
 - Font Awesome (para ícones)
 
-## 📦 Instalação
-
-1. Clone o repositório:
-
-```bash
-git clone
-</rewritten_file>
+## Para rodar na IDE
+npm install
+npm start
 
 
 
