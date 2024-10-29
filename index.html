@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajuda Ai</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="node_modules/accordion-js/dist/accordion.min.css">
+</head>
+<body>
+    <header>
+        <h1>🤖 Ajuda Ai</h1>
+    </header>
+
+    <div class="container">
+        <div class="buttons-box">
+            <button id="takePhoto"><i class="fas fa-camera"></i> Tirar foto</button>
+            <button id="uploadPhoto"><i class="fas fa-upload"></i> Enviar foto</button>
+            <button id="pasteImage"><i class="fas fa-paste"></i> Enviar print</button>
+            <button id="newQuestion" style="display: none;"><i class="fas fa-redo"></i> Outra Questão</button>
+        </div>
+
+        <div class="results-box">
+            <div class="accordion-container">
+                <div class="ac">
+                    <h2 class="ac-header">
+                        <button class="ac-trigger">Links</button>
+                    </h2>
+                    <div class="ac-panel">
+                        <div id="linksContent"></div>
+                    </div>
+                </div>
+                <div class="ac">
+                    <h2 class="ac-header">
+                        <button class="ac-trigger">Aula Completa</button>
+                    </h2>
+                    <div class="ac-panel">
+                        <div id="lessonContent"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="loading-container">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <div class="loading-text">Processando imagem...</div>
+        </div>
+    </div>
+
+    <input type="file" id="fileInput" accept="image/*" style="display: none;">
+
+    <script type="importmap">
+    {
+        "imports": {
+            "@google/generative-ai": "https://esm.run/@google/generative-ai"
+        }
+    }
+    </script>
+    <script src="node_modules/marked/marked.min.js"></script>
+    <script src="node_modules/accordion-js/dist/accordion.min.js"></script>
+    <script src="api.js" type="module"></script>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
