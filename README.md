@@ -1,4 +1,4 @@
-# 🤖 Ajuda AI
+# 🤖 Essa eu não sei
 
 Uma aplicação web que utiliza a API do Google Gemini para analisar imagens de questões e exercícios, fornecendo links para vídeo-aulas relevantes e uma explicação detalhada do conteúdo teórico necessário.
 
