@@ -91,6 +91,7 @@ async function processImage(file) {
 }
 
 function displayResults(results) {
+    document.getElementById('solutionContent').innerHTML = marked.parse(results.solution);
     document.getElementById('linksContent').innerHTML = marked.parse(results.links);
     document.getElementById('lessonContent').innerHTML = marked.parse(results.lesson);
     accordion.open(0);

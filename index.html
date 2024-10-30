@@ -7,11 +7,27 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="node_modules/accordion-js/dist/accordion.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>🤖 Essa eu não sei !</h1>
-    </header>
+    <nav class="navbar">
+        <div class="nav-content">
+            <h1>🤖 AJUDA AI</h1>
+        </div>
+    </nav>
+
+    <div class="hero-section">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h2>ESSA EU NÃO SEI!</h2>
+                <p>Tire uma foto da sua dúvida e deixe a IA te ajudar</p>
+            </div>
+            <div class="hero-image">
+                <img src="assets/robot.png" alt="IA Assistant">
+            </div>
+        </div>
+    </div>
 
     <div class="container">
         <div class="buttons-box">
@@ -23,6 +39,14 @@
 
         <div class="results-box">
             <div class="accordion-container">
+                <div class="ac">
+                    <h2 class="ac-header">
+                        <button class="ac-trigger">A resposta certa é:</button>
+                    </h2>
+                    <div class="ac-panel">
+                        <div id="solutionContent"></div>
+                    </div>
+                </div>
                 <div class="ac">
                     <h2 class="ac-header">
                         <button class="ac-trigger">Links</button>
@@ -51,6 +75,20 @@
     </div>
 
     <input type="file" id="fileInput" accept="image/*" style="display: none;">
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Desenvolvido por Leandro Meneguim</p>
+            <div class="social-links">
+                <a href="https://github.com/leandromeneguim" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/leandromeneguim/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
 
     <script type="importmap">
     {
